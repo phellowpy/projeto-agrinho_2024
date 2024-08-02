@@ -92,6 +92,8 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
   filter: contrast(70%);
   filter: saturate(180%);
   overflow: hidden;
