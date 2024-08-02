@@ -1,0 +1,47 @@
+.animais {
+    background: #f7d7924b;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 97%;
+}
+
+.animais-img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.animais-img img{
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0));
+}
+
+.animais-text {
+    width: 800px;
+    text-align: left;
+}
+
+.animais-text p {
+    color: white;
+}
+
+/*  */
+
+.animais-cont {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.animais-texto {
+    font-style: oblique;
+    margin-left: 50px;
+    width: 700px;
+    text-align: left;
+}
+
+.animais-texto p {
+    color: white;
+}

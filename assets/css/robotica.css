@@ -1,0 +1,51 @@
+/* robo */
+
+.caixa-robo {
+  background: #f7d7924b;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 97%;
+  /*  */
+  display: flex;
+  justify-content: space-between;
+}
+.caixa-individual {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: calc(50% - 10px);
+}
+
+.cor {
+  background: linear-gradient(-58deg, #01032c 0%, #01032c 50%, #70ff1d 50%, #04580b 100%);
+}
+
+.robo-text {
+  color: white;
+  width: 350px;
+}
+
+.robo-imagem img {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0));
+}
+
+
+body, html {
+  height: 100%;
+}
+/* TODO titulo */
+
+.titulo {
+  color: #15b823;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.video {
+  background: #f7d7924b url("../../assets/img/robo/fd.png") no-repeat right bottom;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 97%;
+}

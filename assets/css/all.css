@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:wght@100;300&display=swap');
+body{
+	line-height: 1.5;
+	background-color: #27100E;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Protest Riot', sans-serif;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: rgba(0, 211, 70, 0.7);
+	justify-content: space-evenly;
+    padding: 70px 0;
+    bottom: 0;
+	color: rgba(101, 224, 121);
+    width: 100%;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	background-image: linear-gradient( to top, rgba(78, 50, 9), rgba(78, 50, 9),rgb(0, 68, 23, 0.7) ); 
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	background-color: rgb(0, 68, 23);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: rgb(118, 245, 139);
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: rgb(0, 68, 23);
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main section article {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+main section article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main section article p {
+    margin-bottom: 1rem;
+}
+
+main section article img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+main section article ul {
+    list-style: none;
+}
+
+main section article ul li {
+    margin-bottom: 0.5rem;
+}
+
+main section article ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* TODO navbar */
+
+.navbar {
+	overflow: hidden;
+	background-color: rgba(78, 50, 9, 0.4);
+	border: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	cursor: pointer;
+	font-family: 'Protest Riot', sans-serif;
+	}
+	
+.navbar a {
+	float: left;
+	display: block;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	border: none;
+	transition: background-color 0.3s;
+	border-radius: 10px;
+	font-family: 'Protest Riot', sans-serif;
+}
+.navbar a:hover {
+	background-color: rgba(101, 224, 121, 0.7);
+	border-radius: 10px;
+	color: rgb(26, 26, 26);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.navbar img {
+	background-color: rgba(101, 224, 121, 0.7);
+	border-radius: 0px 10px 10px 0px;
+}
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo à Cidade</title>
+    <link rel="icon" type="imagem/png" href="../../assets/img/folha.png"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/contato.css" />
+    <!-- TODO js -->
+    <script src="../../assets/js/all.js" type="text/javascript" defer></script> 
+    <script src="../../assets/js/index.js" type="text/javascript" defer></script> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+<script src="../../assets/js/index.js"></script>
+
+<br><br><br>
+<center>
+  <div class="letra">
+    <div class="container">
+        <div class="form-image">
+              <div class="mySlides fade">
+                <img src="../../assets/img/contato/porco.jpeg" style="width:100%; border-radius: 50%;">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="../../assets/img/contato/vaca.jpeg" style="width:100%; border-radius: 50%;">
+              </div>
+              
+              <div class="mySlides fade">
+                  <img src="../../assets/img/contato/galinha.jpeg" style="width:100%; border-radius: 50%;">
+                </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1 style="color: white;">Entre em contato</h1>
+                    </div>
+ 
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="name" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="text">Motivos</label>
+                        <input id="text" type="text" name="text" placeholder="Escreva o motivo do contato" required>
+                    </div>
+
+                </div>
+
+ 
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div></div></center>
+    <br><br>
+
+<!-- TODO navbar -->
+
+<div class="navbar">    
+  <img src="../../assets/img/folha.png" alt="" width="50px" height="50px" style="float:left">
+  <a href="../../index.html" onmouseover="playSound('somBlocoInov')">Home&nbsp;<ion-icon name="home-outline"></ion-icon></a>
+  <a onclick="NavBarVoltar()" onmouseover="playSound('somBlocoInov')">Voltar&nbsp;<ion-icon name="arrow-back-outline"></ion-icon></a>
+  <a onclick="NavBarAvançar()" onmouseover="playSound('somBlocoInov')">Avançar&nbsp;<ion-icon name="arrow-forward-outline"></ion-icon></ion-icon></a>
+  <a href="../../assets/html/contato.html" style="float:right" onmouseover="playSound('somBlocoInov')">Contato&nbsp;&nbsp;<ion-icon name="person-outline"></ion-icon></a>
+</div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+
+</html>
