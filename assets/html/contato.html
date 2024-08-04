@@ -24,15 +24,15 @@
     <div class="container">
         <div class="form-image">
               <div class="mySlides fade">
-                <img src="../../assets/img/contato/porco.jpeg" style="width:100%; border-radius: 50%;">
+                <img src="../../assets/img/contato/porco.jpeg">
               </div>
               
               <div class="mySlides fade">
-                <img src="../../assets/img/contato/vaca.jpeg" style="width:100%; border-radius: 50%;">
+                <img src="../../assets/img/contato/vaca.jpeg">
               </div>
               
               <div class="mySlides fade">
-                  <img src="../../assets/img/contato/galinha.jpeg" style="width:100%; border-radius: 50%;">
+                  <img src="../../assets/img/contato/galinha.jpeg">
                 </div>
               <br>
               
@@ -58,8 +58,8 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <label for="telephone">Telefone</label>
+                        <input id="telephone" type="tel" name="telephone" placeholder="Digite seu telefone" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
@@ -76,7 +76,7 @@
  
 
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a> </button>
+                  <button type="button" onclick="checkForm()">Continuar</button>
                 </div>
             </form>
         </div>
@@ -112,6 +112,21 @@
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        // mensagem do formulario
+
+        function checkForm() {
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('telephone').value;
+            const email = document.getElementById('email').value;
+            const text = document.getElementById('text').value;
+
+            if (firstname && telephone && email && text) {
+                alert('O formulário não possui Backend para sua informação ser enviada para algum lugar, isso é apenas um formulário ilustrativo!');
+            } else {
+                alert('Preencha todos os campos, apenas lembre-se que isso e apenas um formulario ilustrativo!');
+            }
         }
         </script>
 </body>

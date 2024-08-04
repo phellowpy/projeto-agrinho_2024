@@ -27,13 +27,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
     background-color: rgba(101, 224, 121, 0.7);
-    padding: 1rem;
     border-radius: 10px;
 }
 
 .form-image img {
-    width: 31rem;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .form {
