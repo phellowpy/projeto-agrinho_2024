@@ -110,11 +110,11 @@ body {
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
-    background-color: #f7d7924b;
+    background-color: #59f8444b;
 }
 
 .input-box input:hover {
-    background-color: #eeeeee75;
+    background-color: #8aff7a4b;
 }
 
 .input-box input:focus-visible {
@@ -162,10 +162,11 @@ body {
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 
 .continue-button button:hover {
-    background-color: black;
+    background-color: rgba(68, 224, 94, 0.7);
 }
 
 .continue-button button a {
