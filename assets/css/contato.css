@@ -110,6 +110,7 @@ body {
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
+    color: white;
     background-color: #59f8444b;
 }
 
@@ -118,7 +119,9 @@ body {
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid #4d1e4d;
+    outline: 2px solid #ffffff;
+    color: white;
+    background-color: #3970314b;
 }
 
 .input-box label,
